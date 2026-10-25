@@ -28,12 +28,33 @@ Lexora transforms notice text into actionable, understandable information.
 
 ```mermaid
 flowchart TD
-    A[Upload a Notice or Provide Text] --> B[Text Extraction / OCR]
-    B --> C[Notice Analysis]
-    C --> D[Deterministic Rule Engine]
-    D --> E[Identify Supported Indicators]
-    E --> F[Present Findings and Deadline Information]
-    F --> G[Guide the User Toward Official Verification]
+    A(["📄 Submit Notice"]) --> B["🔎 Extract Text<br/>OCR / Document Parsing"]
+
+    B --> C["🧹 Process Extracted Text"]
+    C --> D["⚙️ Deterministic Rule Engine"]
+
+    D --> E["📋 Identify Notice Patterns"]
+    D --> F["⚠️ Flag Potential Warning Signs"]
+    D --> G["📅 Identify Relevant Dates"]
+
+    E --> H["🧠 Organize Findings"]
+    F --> H
+    G --> H
+
+    H --> I["📊 Present Analysis Results"]
+    I --> J["🏛️ Guide Official Verification"]
+
+    J --> K(["✅ Make a Better-Informed Decision"])
+
+    classDef startEnd fill:#102A43,stroke:#38BDF8,color:#FFFFFF,stroke-width:2px
+    classDef process fill:#E0F2FE,stroke:#0284C7,color:#0C2D48,stroke-width:1.5px
+    classDef analysis fill:#F3E8FF,stroke:#9333EA,color:#3B0764,stroke-width:1.5px
+    classDef result fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:1.5px
+
+    class A,K startEnd
+    class B,C,D process
+    class E,F,G,H analysis
+    class I,J result
 ```
 
 The current system uses predefined analysis rules. OCR extracts text; it does not independently establish whether a notice is fraudulent.
@@ -62,14 +83,30 @@ Lexora aims to evolve beyond manually defined rules by exploring a hybrid system
 
 ```mermaid
 flowchart TD
-    A[Notice Text] --> B[Text Preprocessing]
-    B --> C[TF-IDF Feature Extraction]
-    C --> D[Trained ML Classifier]
-    A --> E[Deterministic Rule Engine]
-    D --> F[Combine Model Signals and Rule Evidence]
-    E --> F
-    F --> G[Explainable Risk Screening]
-    G --> H[Official Verification Guidance]
+    A(["📄 Notice Text"]) --> B["Text Preprocessing"]
+
+    B --> C["⚙️ Rule-Based Analysis"]
+    B --> D["🧮 TF-IDF Features"]
+
+    D --> E["🤖 Trained ML Classifier"]
+    C --> F["Evidence & Rule Findings"]
+    E --> G["ML Classification Signal"]
+
+    F --> H["🔗 Combine and Evaluate Signals"]
+    G --> H
+
+    H --> I["📊 Explainable Risk Screening"]
+    I --> J(["🏛️ Official Verification Guidance"])
+
+    classDef input fill:#102A43,stroke:#38BDF8,color:#FFFFFF,stroke-width:2px
+    classDef current fill:#DBEAFE,stroke:#2563EB,color:#1E3A8A,stroke-width:1.5px
+    classDef future fill:#F3E8FF,stroke:#9333EA,color:#581C87,stroke-width:1.5px
+    classDef output fill:#DCFCE7,stroke:#16A34A,color:#14532D,stroke-width:2px
+
+    class A,J input
+    class B,C,F current
+    class D,E,G,H future
+    class I output
 ```
 
 **Proposed baseline:**
