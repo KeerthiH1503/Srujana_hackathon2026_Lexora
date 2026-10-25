@@ -1,0 +1,18 @@
+{
+  "id": "11_high_risk_138",
+  "category": "high risk notice",
+  "description": "Section 138 notice threatening prosecution and imprisonment, large amount, receipt date known",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Gowda, Law Chambers, Bengaluru\nDate: 20/10/2026\n\nDEMAND NOTICE under Section 138 of the Negotiable Instruments Act, 1881\n\nUnder instructions from my client, I state that your cheque no. 004567 for Rs. 12,00,000/- was dishonoured on 12/10/2026. You are hereby called upon to pay Rs. 12,00,000/- within 15 days of receipt of this notice, failing which my client will initiate criminal prosecution against you under Section 138 of the Act, which may lead to imprisonment, and will also recover the amount through civil proceedings. This notice was served on you on 21/10/2026.\n",
+  "expected": {
+    "noticeType": "cheque_bounce_138",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-11-05"
+    },
+    "professional": [
+      "yes"
+    ],
+    "severity": "see_professional_now"
+  }
+}

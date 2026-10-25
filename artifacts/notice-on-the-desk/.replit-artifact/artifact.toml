@@ -1,0 +1,29 @@
+kind = "web"
+previewPath = "/"
+title = "Notice on the Desk"
+description = "An owner-first triage tool for small businesses to understand a government or legal notice, identify deadlines and urgency, and decide whether to consult a professional. Uses synthetic demo notices and makes evidence and uncertainty visible."
+version = "1.0.0"
+id = "artifacts/notice-on-the-desk"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20967
+
+[services.development]
+run = "pnpm --filter @workspace/notice-on-the-desk run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/notice-on-the-desk", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/notice-on-the-desk/out"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20967"
+BASE_PATH = "/"
+NEXT_PUBLIC_DEMO_MODE = "true"

@@ -1,0 +1,17 @@
+{
+  "id": "03_ambiguous_start_date",
+  "category": "ambiguous start date",
+  "description": "Period runs from receipt but no date of receipt is given",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Rao, Law Chambers, Bengaluru\nDate: 01/10/2026\n\nLEGAL NOTICE\n\nUnder instructions from my client, M/s Sample Supplies, I call upon you to pay the outstanding invoice amount of Rs. 85,000/- within 15 days of receipt of this notice. If you fail to do so, my client will be forced to take appropriate legal action against you at your risk as to costs.\n",
+  "expected": {
+    "noticeType": "legal_notice",
+    "deadline": {
+      "kind": "undeterminable"
+    },
+    "professional": [
+      "yes",
+      "probably"
+    ]
+  }
+}

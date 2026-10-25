@@ -1,0 +1,19 @@
+{
+  "id": "14_date_in_words_HARD",
+  "category": "hard case (expected to fail)",
+  "description": "A person can read 'the fifteenth of November, 2026'; the date parser cannot. Truth: 2026-11-15",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nOffice of the Assistant Commissioner of CGST, Range V, Bengaluru\nDate: 05/10/2026\n\nShow Cause Notice under Section 73 of the CGST Act, 2017\nGSTIN 29ABCDE0000A1Z5\n\nYou are directed to submit your reply on or before the fifteenth of November, 2026 failing which the case will be decided on the basis of available records.\n",
+  "expected": {
+    "noticeType": "gst_show_cause",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-11-15"
+    },
+    "professional": [
+      "yes",
+      "probably"
+    ]
+  },
+  "hard": true
+}

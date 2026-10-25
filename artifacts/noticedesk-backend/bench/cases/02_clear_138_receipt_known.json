@@ -1,0 +1,17 @@
+{
+  "id": "02_clear_138_receipt_known",
+  "category": "clear notice",
+  "description": "Section 138 demand notice where the date of receipt is stated (deadline already passed)",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Kumar, Law Office, Bengaluru\nDate: 05/10/2026\n\nLEGAL DEMAND NOTICE under Section 138 of the Negotiable Instruments Act, 1881\n\nTo, Mr. Sample Drawer\n\nUnder instructions from my client, I state that your cheque no. 000123 for Rs. 2,00,000/- drawn on Demo Bank was returned unpaid by the bank on 28/09/2026 with the remark \"funds insufficient\". You are hereby called upon to pay Rs. 2,00,000/- within 15 days of receipt of this notice, failing which my client will initiate criminal proceedings against you under Section 138 of the Act. This notice was delivered to you on 08/10/2026.\n",
+  "expected": {
+    "noticeType": "cheque_bounce_138",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-10-23"
+    },
+    "professional": [
+      "yes"
+    ]
+  }
+}

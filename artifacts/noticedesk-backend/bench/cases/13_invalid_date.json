@@ -1,0 +1,17 @@
+{
+  "id": "13_invalid_date",
+  "category": "invalid date",
+  "description": "Notice date is 31/02/2026, which does not exist",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Pillai, Law Office, Bengaluru\nDate: 31/02/2026\n\nLEGAL NOTICE\n\nUnder instructions from my client, you are hereby called upon to pay Rs. 15,000/- within 15 days from the date of this notice, failing which my client will take appropriate legal action.\n",
+  "expected": {
+    "noticeType": "legal_notice",
+    "deadline": {
+      "kind": "undeterminable"
+    },
+    "professional": [
+      "yes",
+      "probably"
+    ]
+  }
+}

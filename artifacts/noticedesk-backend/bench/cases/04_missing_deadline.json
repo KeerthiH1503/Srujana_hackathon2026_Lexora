@@ -1,0 +1,17 @@
+{
+  "id": "04_missing_deadline",
+  "category": "missing information",
+  "description": "GST show cause notice that gives no reply date or period",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nOffice of the Deputy Commissioner of CGST, Division Demo, Bengaluru\nDate: 03/10/2026\n\nShow Cause Notice under Section 73 of the CGST Act, 2017\nGSTIN 29ABCDE0000A1Z5\n\nYou are required to explain why tax of Rs. 62,000/- should not be demanded for the quarter ending June 2026. Please submit your explanation to this office along with supporting documents.\n",
+  "expected": {
+    "noticeType": "gst_show_cause",
+    "deadline": {
+      "kind": "undeterminable"
+    },
+    "professional": [
+      "yes",
+      "probably"
+    ]
+  }
+}

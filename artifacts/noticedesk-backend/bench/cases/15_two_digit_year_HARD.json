@@ -1,0 +1,19 @@
+{
+  "id": "15_two_digit_year_HARD",
+  "category": "hard case (expected to fail)",
+  "description": "'15 Oct 26' style date; a person can read it, the parser refuses two-digit years. Truth: 2026-11-14",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nIncome Tax Department - Centralized Processing Centre, Bengaluru\nDt: 15 Oct '26\nPAN: AAAPX0000X   Assessment Year: 2025-26\n\nIntimation under section 143(1)(a) of the Income-tax Act, 1961 - Proposed adjustment\n\nYou are requested to submit your response within 30 days from the date of issue of this intimation.\n",
+  "expected": {
+    "noticeType": "it_intimation",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-11-14"
+    },
+    "professional": [
+      "no",
+      "probably"
+    ]
+  },
+  "hard": true
+}

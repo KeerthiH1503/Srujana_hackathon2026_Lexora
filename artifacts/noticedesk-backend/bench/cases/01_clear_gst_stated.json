@@ -1,0 +1,17 @@
+{
+  "id": "01_clear_gst_stated",
+  "category": "clear notice",
+  "description": "GST show cause notice with an explicit reply date and a hearing date that must not be mistaken for it",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nOffice of the Assistant Commissioner of CGST, Range II, Division Demo, Bengaluru\nRef No: DEMO/SCN/2026/0412\nDate: 12/10/2026\n\nTo,\nM/s Sample Traders, GSTIN 29ABCDE0000A1Z5\n\nSubject: Show Cause Notice under Section 73 of the CGST Act, 2017\n\nIt has been noticed that input tax credit of Rs. 3,45,000/- was availed by you in excess for the period April 2025 to March 2026. You are hereby required to show cause why the said amount along with interest and penalty should not be demanded from you. You are directed to submit your reply on or before 11/11/2026. A personal hearing is fixed on 18/11/2026 at 11:00 AM. If you fail to reply, the matter will be decided ex-parte on the basis of available records and recovery proceedings may follow.\n",
+  "expected": {
+    "noticeType": "gst_show_cause",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-11-11"
+    },
+    "professional": [
+      "yes"
+    ]
+  }
+}

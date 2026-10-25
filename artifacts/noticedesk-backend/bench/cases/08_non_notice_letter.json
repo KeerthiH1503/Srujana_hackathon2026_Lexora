@@ -1,0 +1,16 @@
+{
+  "id": "08_non_notice_letter",
+  "category": "non-notice document",
+  "description": "An ordinary business payment reminder, not a notice",
+  "today": "2026-10-26",
+  "text": "Dear Sir/Madam,\n\nThank you for your recent order of 40 office chairs. This is a friendly reminder that invoice number INV-2026-118 for Rs. 64,000 is due for payment by the end of this month. Please let us know if you need a copy of the invoice or have any questions.\n\nWarm regards,\nSample Furniture Co.\n",
+  "expected": {
+    "noticeType": "unknown",
+    "deadline": {
+      "kind": "undeterminable"
+    },
+    "professional": [
+      "probably"
+    ]
+  }
+}

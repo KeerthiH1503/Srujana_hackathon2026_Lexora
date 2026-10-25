@@ -1,0 +1,16 @@
+{
+  "id": "05_conflicting_dates",
+  "category": "conflicting dates",
+  "description": "Period counted from the notice date gives 25/10 but the notice states 30/10",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Shetty, Law Office, Bengaluru\nDate: 10/10/2026\n\nLEGAL NOTICE\n\nUnder instructions from my client, you are hereby called upon to vacate the shop premises and pay arrears of rent of Rs. 1,20,000/- within 15 days from the date of this notice, i.e., on or before 30/10/2026, failing which my client will initiate appropriate legal proceedings.\n",
+  "expected": {
+    "noticeType": "legal_notice",
+    "deadline": {
+      "kind": "undeterminable"
+    },
+    "professional": [
+      "yes"
+    ]
+  }
+}

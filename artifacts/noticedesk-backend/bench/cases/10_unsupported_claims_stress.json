@@ -1,0 +1,51 @@
+{
+  "id": "10_unsupported_claims_stress",
+  "category": "unsupported claim",
+  "description": "STRESS TEST: a simulated extractor invents a section and a due date that are not in the notice. They must be flagged and ignored",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Iyer, Law Office, Bengaluru\nDate: 12/10/2026\n\nLEGAL NOTICE\n\nUnder instructions from my client, you are hereby called upon to pay Rs. 30,000/- within 20 days from the date of this notice, failing which my client will take appropriate legal action.\n",
+  "expected": {
+    "noticeType": "legal_notice",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-11-01"
+    },
+    "professional": [
+      "yes",
+      "probably"
+    ],
+    "unsupportedClaimsFlagged": true
+  },
+  "stress": true,
+  "extractorOutput": {
+    "isNotice": true,
+    "noticeType": "legal_notice",
+    "confidence": "high",
+    "sender": {
+      "value": "Advocate Demo Iyer",
+      "quote": "Advocate Demo Iyer, Law Office, Bengaluru"
+    },
+    "laws": [
+      {
+        "value": "Section 420 of the Indian Penal Code",
+        "quote": "Section 420 of the Indian Penal Code"
+      }
+    ],
+    "demand": {
+      "value": "Pay Rs. 30,000",
+      "quote": "you are hereby called upon to pay Rs. 30,000/- within 20 days from the date of this notice"
+    },
+    "amount": {
+      "value": "Rs. 30,000",
+      "quote": "Rs. 30,000/-"
+    },
+    "noticeDate": "12/10/2026",
+    "receiptDate": null,
+    "dueDate": "15/11/2026",
+    "responsePeriod": "within 20 days from the date of this notice",
+    "riskPhrases": [
+      "appropriate legal action"
+    ],
+    "summaryPlain": "A lawyer asks you to pay Rs. 30,000 within 20 days."
+  }
+}

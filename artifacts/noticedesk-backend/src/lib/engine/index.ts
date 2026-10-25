@@ -1,0 +1,12 @@
+export { analyse, AnalyseInputError, MIN_TEXT, MAX_TEXT } from './analyse';
+export { computeDeadline, buildDateFact } from './deadline';
+export { scoreSeverity, recommendProfessional } from './severity';
+export { verifyQuote, findQuote, assessTextQuality } from './text';
+export { heuristicExtractor, extractHeuristic } from './extractors/heuristic';
+export { checkAuthenticity, findIdentifier } from './authenticity';
+export { compareWithRegistry, createSyntheticRegistry, syntheticRegistry } from './records';
+export { computeTemplateSimilarity } from './templateSimilarity';
+export { ocrImage, ocrAvailable } from './ocr';
+export { ExtractionError } from './schema';
+export type { Extractor, RawExtraction } from './schema';
+export type { RegistryProvider } from './records';

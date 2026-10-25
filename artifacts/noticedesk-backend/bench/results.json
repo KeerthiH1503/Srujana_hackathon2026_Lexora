@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-10-25T02:08:47.176Z",
+  "total": 15,
+  "handled": 7,
+  "abstained": 8,
+  "metrics": {
+    "evidenceSupportRate": 100,
+    "deadlineCorrectness": 77.8,
+    "safeAbstentionRate": 100
+  },
+  "cases": [
+    {
+      "id": "01_clear_gst_stated",
+      "category": "clear notice",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "02_clear_138_receipt_known",
+      "category": "clear notice",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "03_ambiguous_start_date",
+      "category": "ambiguous start date",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": true
+    },
+    {
+      "id": "04_missing_deadline",
+      "category": "missing information",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": true
+    },
+    {
+      "id": "05_conflicting_dates",
+      "category": "conflicting dates",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": true
+    },
+    {
+      "id": "06_it_proposed_adjustment",
+      "category": "clear notice",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "07_leap_year",
+      "category": "leap year",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "08_non_notice_letter",
+      "category": "non-notice document",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": true
+    },
+    {
+      "id": "09_poor_quality_scan",
+      "category": "poor quality document",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": true
+    },
+    {
+      "id": "10_unsupported_claims_stress",
+      "category": "unsupported claim [stress]",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "11_high_risk_138",
+      "category": "high risk notice",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "12_hearing_date_trap",
+      "category": "date trap",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": false
+    },
+    {
+      "id": "13_invalid_date",
+      "category": "invalid date",
+      "pass": true,
+      "reason": "All checks passed.",
+      "abstained": true
+    },
+    {
+      "id": "14_date_in_words_HARD",
+      "category": "hard case (expected to fail) [known hard]",
+      "pass": false,
+      "reason": "no deadline given (status unclear), expected 2026-11-15",
+      "abstained": true
+    },
+    {
+      "id": "15_two_digit_year_HARD",
+      "category": "hard case (expected to fail) [known hard]",
+      "pass": false,
+      "reason": "no deadline given (status unclear), expected 2026-11-14",
+      "abstained": true
+    }
+  ],
+  "extractor": "heuristic",
+  "notes": [
+    "The cases are synthetic and were written by the team. Expected results were written before running and are not edited to match output.",
+    "Results show consistency on these known cases. They are not a guarantee of accuracy on real notices.",
+    "Evidence support is measured over claims in the non-stress cases. It checks that quoted text exists in the notice; it does not prove the reading of that text is correct.",
+    "Deadline correctness is measured only on cases where a person can read the correct date. Safe abstention is measured only on cases where no single date can be established.",
+    "Cases marked known hard are limits we expect to miss; they are included on purpose.",
+    "No AI is used. Evidence support is high by construction because the rule-based reader copies text directly from the notice."
+  ]
+}

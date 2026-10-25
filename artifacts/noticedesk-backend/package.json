@@ -1,0 +1,32 @@
+{
+  "name": "@workspace/noticedesk-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "tsx bench/run.ts"
+  },
+  "dependencies": {
+    "@tesseract.js-data/eng": "^1.0.0",
+    "next": "16.4.2",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "tesseract.js": "^7.0.0",
+    "unpdf": "1.7.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "tsx": "catalog:",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.5"
+  }
+}

@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--paper-bright);
+  --color-ink: var(--ink);
+  --color-muted: var(--ink-soft);
+  --color-line: var(--line);
+  --color-accent: var(--teal);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+  --font-mono: var(--font-jetbrains);
+}
+@import "./site.css";
+
+html, body { min-height: 100%; }

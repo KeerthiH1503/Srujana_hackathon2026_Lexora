@@ -1,0 +1,16 @@
+{
+  "id": "09_poor_quality_scan",
+  "category": "poor quality document",
+  "description": "Badly garbled OCR text",
+  "today": "2026-10-26",
+  "text": "N0t1ce Und3r Sect10n 7? 0f th3 CG5T Act\n0ff1ce 0f the C0mm1ss1on3r\nd@te: 1?/1O/2O26\nY0u are r3qu1r3d t0 pay Rs 4?,OOO w1th1n 1S d@ys 0f rec3ipt\n0f th1s n0t1c3 f@1l1ng wh1ch @ct10n w1ll b3 t@k3n\n",
+  "expected": {
+    "noticeType": "unknown",
+    "deadline": {
+      "kind": "undeterminable"
+    },
+    "professional": [
+      "probably"
+    ]
+  }
+}

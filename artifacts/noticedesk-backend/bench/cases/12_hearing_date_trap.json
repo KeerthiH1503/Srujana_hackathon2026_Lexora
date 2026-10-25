@@ -1,0 +1,18 @@
+{
+  "id": "12_hearing_date_trap",
+  "category": "date trap",
+  "description": "A personal hearing date appears after the reply period; it must not be treated as the deadline",
+  "today": "2026-10-26",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nOffice of the Superintendent of CGST, Range IV, Bengaluru\nDate: 01/10/2026\n\nShow Cause Notice under Section 73 of the CGST Act, 2017\nGSTIN 29ABCDE0000A1Z5\n\nYou are hereby directed to submit your written reply within 30 days from the date of this notice. A personal hearing is fixed on 12/11/2026 at 11:00 AM, and you may appear in person or through an authorised representative.\n",
+  "expected": {
+    "noticeType": "gst_show_cause",
+    "deadline": {
+      "kind": "date",
+      "date": "2026-10-31"
+    },
+    "professional": [
+      "yes",
+      "probably"
+    ]
+  }
+}

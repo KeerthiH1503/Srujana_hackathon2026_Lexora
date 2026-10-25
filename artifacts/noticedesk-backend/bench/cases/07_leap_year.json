@@ -1,0 +1,18 @@
+{
+  "id": "07_leap_year",
+  "category": "leap year",
+  "description": "15 days counted across 29 February 2028",
+  "today": "2028-02-25",
+  "text": "SYNTHETIC SAMPLE - NOT A REAL NOTICE\nAdvocate Demo Nair, Law Office, Bengaluru\nDate: 20/02/2028\n\nLEGAL NOTICE\n\nUnder instructions from my client, you are hereby called upon to return the security deposit of Rs. 40,000/- within 15 days from the date of this notice, failing which my client will take appropriate legal action.\n",
+  "expected": {
+    "noticeType": "legal_notice",
+    "deadline": {
+      "kind": "date",
+      "date": "2028-03-06"
+    },
+    "professional": [
+      "probably",
+      "yes"
+    ]
+  }
+}
